@@ -1,0 +1,317 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Kanit", sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav img {
+    margin-top: 10px;
+    margin-left: 60px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 150px;
+    overflow: hidden;
+}
+
+nav img, nav li {
+    float: left;
+}
+
+nav li a.active {
+    color: #00bfff;
+}
+
+nav li a {
+    display: inline-block;
+    font-size: 14px;
+    padding: 20px 30px;
+    color: black;
+    text-decoration: none;
+}
+
+nav li a.get {
+    margin-top: 8px;
+    margin-right: 50px;
+    width: 100px;
+    text-align: center;
+    background-color: #00bfff;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 500;
+    color: white;
+}
+
+nav li a:hover:not(.login){
+    background-color: #00bfff;
+    color: white;
+}
+
+nav li a.get:hover {
+    background-color: blue;
+}
+
+nav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container-1 {
+    margin-top: 100px;
+    padding: 50px;
+    height: 400px;
+}
+
+.left-column {
+    width: 25%;
+    position: relative;
+    left: 80px;
+    top: 35px;
+}
+
+.left-column p {
+    font-size: 14px;
+}
+
+.right-column {
+    width: 75%;
+    position: relative;
+    left: 300px;
+    bottom: 150px;
+}
+
+.right-column h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+.right-column p {
+    font-size: 14px;
+    color: grey;
+    text-align: justify;
+}
+
+.container-2 {
+    background: url(/About-Tool/background1.jpg) no-repeat center;
+    background-size: cover;
+    color: white;
+    position: relative;
+    padding: 50px;
+}
+
+.left-text {
+    float: left;
+    width: 25%;
+}
+
+.container-2 .left-text h2 {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.right-text p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+.right-text {
+    float: left;
+    width: 75%;
+    text-align: justify;
+}
+
+.container-2::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container-3 {
+    background: url(/About-Tool/background2.jpg) no-repeat center;
+    background-size: cover;
+    color: white;
+    position: relative;
+    padding: 50px;
+}
+
+.left-text {
+    float: left;
+    width: 25%;
+}
+
+.container-3 .left-text h2 {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.right-text p {
+    font-size: 14px;
+}
+
+.right-text {
+    float: left;
+    width: 75%;
+}
+
+.container-3::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container-4 {
+    position: relative;
+    padding: 50px;
+}
+
+.container-4 .right-img img{
+    position: absolute;
+    right: 0;
+    top: 90px;
+    bottom: 5px;
+}
+
+.left-img h3 {
+    font-size: 30px;
+    font-style: italic;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.left-img p {
+    color: grey;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+
+img[alt=quotes-1] {
+    position: relative;
+    top: 50px;
+}
+
+img[alt=quotes-2] {
+    position: relative;
+    top: 225px;
+    left: 375px;
+    transform: rotateY(3.142rad);
+    -webkit-transform: rotateY(3.142rad);
+}
+
+.container-5 {
+    position: relative;
+    padding: 50px;
+    padding-left: 80px;
+    height: 600px;
+}
+
+img[alt=lenida] {
+    position: relative;
+    top: 220px;
+    right: 205px;
+}
+
+img[alt=amalia] {
+    position: relative;
+    right: 175px;
+    top: 50px;
+}
+
+img[alt=ria] {
+    position: relative;
+    right: 380px;
+    top: 275px;
+}
+
+.right-team {
+    position: relative;
+    width: 50%;
+    left: 550px;
+    bottom: 200px;
+}
+
+.right-team h3{
+    font-size: 40px;
+    font-family: arial;
+}
+
+.right-team p {
+    color: grey;
+}
+
+.card-team {
+    display: inline-block;
+    width: 12.5%;
+    position: relative;
+    left: 550px;
+    bottom: 200px;
+}
+
+.card-team h3 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-team p {
+    font-size: 14px;
+    color: grey;
+    margin-top: -20px;
+}
+
+footer {
+    padding: 10px 40px 10px;
+}
+
+footer img {
+    position: relative;
+    bottom: 135px;
+}
+
+footer .footer {
+    display: inline-block;
+    padding: 20px;
+    margin-left: 100px;
+}
+
+div.container-last-1 {
+    border-bottom: 3px solid #ddd;
+}
+
+div.container-last-1 p {
+    font-size: 14px;
+    color: grey;
+    line-height: 1.0;
+}
+
+div.container-last-1 a {
+   text-decoration: none; 
+}
+
+.container-last-2 {
+    text-align: center;
+    color: grey;
+}
+
+.footer img {
+    position: relative;
+    top: 7px;
+    right: 9px;
+    margin-right: 10px;
+    margin-left: 5px;
+}

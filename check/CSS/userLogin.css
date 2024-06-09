@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Kanit", sans-serif;
+    font-size: 12px;
+    padding: 10px;
+    background-color: #414c94;
+}
+
+.container{
+    background-image: url(/gambar/background-login1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.left-column {
+    float: left;
+    width: 50%;
+    padding: 30px 10px 10px 10px;
+}
+
+.right-column {
+    float: left;
+    width: 50%;
+    background-color: #edf1f6;
+    box-shadow: 8px 8px 16px 8px rgba(0,0,0,0.6);
+    margin-top: 100px;
+    border-radius: 75px 0 0 75px;
+    padding: 70px;
+    color: #3d5299;
+}
+
+/* bagian logo dan tulisan atas*/
+.top img {
+    width: 180px;
+    height: 180px;
+    margin-bottom: -70px;
+    margin-top: -60px;
+}
+
+.top h4 {
+    color: #3d5299;
+}
+
+.top {
+    text-align: center;
+}
+
+/* bagian form*/
+input[type="email"], input[type="password"] {
+    display: block;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #3d5299;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+label {
+    color: #3d5299;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.down {
+    padding: 50px;
+    vertical-align: middle;
+}
+
+input[type=submit] {
+    display: block;
+    margin-top: 15px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #3d5299;
+    color: white;
+}
+
+label a {
+    text-decoration: none;
+    float: right;
+    color: #3d5299;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+label a:hover {
+    color: #003040;
+}
+
+label[for=remember] {
+    font-weight: bold;
+}
+
+input[type=submit]:hover {
+    background-color: #005f7f;
+}
+
+/* icon */
+.icon {
+    text-align: center;
+}
+
+.icon p {
+    color: #005f7f;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.icon img {
+    margin-right: 10px;
+}
+
+/* sign up*/
+.sign-up p{
+    text-align: center;
+    margin-top: 50px;
+    color: #3d5299;
+}
+
+.sign-up a {
+    text-decoration: none;
+    color: #3d5299;
+    font-weight: bold;
+}
+
+.sign-up a:hover {
+    color: #003040;
+}
+
+.right-column p {
+    text-align: justify;
+    font-size: 16px;
+}
+
+.right-column button {
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #3d5299;
+    color: white;
+    cursor: pointer;
+}
+
+.right-column button:hover {
+    background-color: #003040;
+}
+
+@media screen and (max-width:700px) {
+    .left-column, .right-column {
+        float: none;
+        width: 100%;
+    }
+
+    .right-column {
+        display: none;
+    }
+}

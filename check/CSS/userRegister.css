@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Kanit", sans-serif;
+    background-color:  #3d5299;
+} 
+
+.left-column {
+    position: absolute;
+    padding: 20px 100px;
+}
+
+.right-column {
+    position: absolute;
+    font-size: 12px;
+    width: 500px;
+    margin-top: 10px;
+    box-shadow: 8px 8px 16px 8px rgba(0,0,0,0.6);
+    right: 100px;
+    border-radius: 20px;
+    background-color: #edf1f6;
+    padding: 10px;
+    padding-right: 50px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=number] {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+input[type=submit] {
+    padding: 10px;
+    border: none;
+    color: #fff;
+    background-color: hsl(226, 43%, 42%);
+    border-radius: 5px;
+}
+
+.container p {
+    margin-top: 10px;
+    color: #000;
+}
+
+.container p a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #3d5299;
+}
+
+.left-column h1 {
+    color: #FFF;
+}
+
+.left-column p {
+    font-size: 14px;
+    margin-top: -10px;
+    color: #FFF;
+}
+
+.left-column img {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    top: 50px;
+}
+
+@media screen and (max-width: 700px) {
+    .left-column {
+        display: none;
+    }
+    .right-column {
+        top: 20px;
+        left: 75px;
+        border-radius: 10px;
+    }
+}

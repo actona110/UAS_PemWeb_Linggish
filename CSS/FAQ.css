@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Kanit", sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav img {
+    margin-top: 10px;
+    margin-left: 60px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 150px;
+    overflow: hidden;
+}
+
+nav img, nav li {
+    float: left;
+}
+
+nav li a.active {
+    color: #00bfff;
+}
+
+nav li a {
+    display: inline-block;
+    font-size: 14px;
+    padding: 20px 30px;
+    color: black;
+    text-decoration: none;
+}
+
+nav li a.get {
+    margin-top: 8px;
+    margin-right: 50px;
+    width: 100px;
+    text-align: center;
+    background-color: #00bfff;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 500;
+    color: white;
+}
+
+nav li a:hover:not(.login){
+    background-color: #00bfff;
+    color: white;
+}
+
+nav li a.get:hover {
+    background-color: blue;
+}
+
+nav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Artikel FAQ */
+.container {
+    height: 600px;
+}
+
+header {
+    text-align: center;
+    margin-top: 70px;
+}
+
+header img {
+    width: 15px;
+}
+
+header img[alt="hfacebook"] {
+    position: absolute;
+    display: block;
+    left: 1180px;
+    margin-top: -90px;
+}
+
+header img[alt="hinstagram"] {
+    position: absolute;
+    display: block;
+    left: 1180px;
+    margin-top: -60px;
+}
+
+header img[alt="htwitter"] {
+    position: absolute;
+    display: block;
+    left: 1180px;
+    margin-top: -30px;
+}
+
+
+header h1.shadow {
+    position: relative;
+    bottom: 90px;
+    color: grey;
+    font-size: 50px;
+    opacity: 0.1;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin-top: -130px;
+}
+
+.left-column {
+    float: left;
+    width: 60%;
+}
+
+.right-column {
+    float: left;
+    width: 40%;
+}
+
+header p a {
+    color: #00bfff;
+    text-decoration: none;
+}
+
+header p a:hover {
+    color: blue;
+}
+
+
+.card {
+    padding: 0 60px;
+}
+
+.card p {
+    border: 1px solid #eee7e7;
+    padding: 15px 30px;
+    font-size: 12px;
+    box-shadow: 5px 5px 10px 2px #eee7e7;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.card p input[type="image"] {
+    position: absolute;
+    left: 650px;
+    margin-top: -19px;
+}
+
+.card .hide {
+    margin-top: -15px;
+    box-shadow: none;
+    border-radius: 5px 5px 10px 10px;
+    background-color: #eee;
+}
+
+.right-column h2, .right-column p{
+    text-align: center;
+}
+
+.right-column img {
+    position: relative;
+    left: 155px;
+}
+
+.right-column h2 {
+    margin-top: -8px;
+}
+
+.right-column p {
+    margin-top: -20px;
+    font-size: 14px;
+    color: gray;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form label {
+    font-size: 12px;
+    color: #333;
+}
+
+.next input[alt="next"] {
+    position: absolute;
+    left: 400px;
+    margin-top: 10px;
+}
+
+.next input[alt="next-x"] {
+    position: absolute;
+    left: 360px;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180eg);
+    margin-top: 10px;
+}
+
+input {
+    display: block;
+}
+
+input[type="text"] {
+    margin-top: 5px;
+    padding: 8px;
+    width: 90%;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus {
+    border: 1px solid gray;
+}
+
+input[type="submit"] {
+    position: relative;
+    left: 190px;
+    top: 40px;
+    padding: 10px;
+    width: 100px;
+    background-color: #00bfff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: blue;
+}
+
+.container::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+/* Footer FAQ */
+footer {
+    padding: 40px 40px 10px;
+}
+
+footer img {
+    position: relative;
+    bottom: 135px;
+}
+
+footer .footer {
+    display: inline-block;
+    padding: 20px;
+    margin-left: 100px;
+}
+
+div.container-last-1 {
+    border-bottom: 3px solid #ddd;
+}
+
+div.container-last-1 p {
+    font-size: 14px;
+    color: grey;
+    line-height: 1.0;
+}
+
+div.container-last-1 a {
+   text-decoration: none; 
+}
+
+.container-last-2 {
+    text-align: center;
+    color: grey;
+}
+
+.footer img {
+    position: relative;
+    top: 7px;
+    right: 9px;
+    margin-right: 10px;
+    margin-left: 5px;
+}

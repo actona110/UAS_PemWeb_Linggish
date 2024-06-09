@@ -1,0 +1,316 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Kanit", sans-serif;
+    background-color: #eee;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: White;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+}
+
+nav img {
+    margin: 10px 5px;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 12px 16px;
+    font-size: 14px;
+    color: black;
+}
+
+nav ul li a i {
+    margin-right: 20px;
+}
+
+nav ul li a.active {
+    background-color: blue;
+    color: white;
+}
+
+nav ul li a:hover:not(.active) {
+    background-color: blue;
+    color: white;
+}
+
+nav ul li a.logout:hover {
+    background-color: red;
+}
+
+.container {
+    margin-left: 15%;
+    padding: 1px;
+}
+
+header {
+    border-bottom: 1px solid #ddd;
+    padding-left: 25px;
+}
+
+.left h1 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.left h1 i {
+    color: blue;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.right {
+    float: right;
+    position: relative;
+    bottom: 40px;
+}
+
+.right input {
+    position: relative;
+    bottom: 5px;
+    right: 20px;
+    padding: 5px;
+    background-color: #eee;
+    padding-left: 30px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    width: 150px;
+}
+
+.right i.fa-magnifying-glass {
+    position: relative;
+    bottom: 5px;
+    right: 160px;
+    font-size: 12px;
+    color: grey;
+}
+
+.right i.fa-circle-plus{
+    position: relative;
+    right: 25px;
+    bottom: 1px;
+    font-size: 24px;
+    color: blue;
+}
+
+.right i.fa-bell{
+    position: relative;
+    right: 20px;
+    bottom: 5px;
+    font-size: 12px;
+    color: grey;
+    border-radius: 100%;
+    background-color: white;
+    padding: 8px;
+}
+
+.left p {
+    font-size: 14px;
+}
+
+.left i.fa-angle-right {
+    color: grey;
+    position: relative;
+    top: 3px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.right i.fa-print {
+    position: relative;
+    right: 30px;
+    top: 1px;
+    color: grey;
+    background-color: white;
+    padding: 4px;
+    border: 1px solid grey;
+    position: relative;
+}
+
+.right i.fa-pen-to-square {
+    position: relative;
+    right: 5px;
+}
+
+.right button {
+    position: relative;
+    bottom: 1px;
+    right: 25px;
+    padding: 5px;
+    width: 110px;
+    color: grey;
+    background-color: white;
+    border: 1px solid grey;
+}
+
+.right button:hover {
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.right i.fa-print:hover {
+    color: black;
+    border: 1px solid black;
+}
+
+main {
+    padding: 30px;
+}
+
+article div.profile-side, article div.status-aside {
+    float: left;
+}
+
+article div.profile-side {
+    width: 35%;
+    padding: 50px;
+    background-color: white;
+    display: inline-block;
+}
+
+article div.profile-side img {
+    margin-left: 75px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-top: -10px;
+    margin-bottom: 5px;
+}
+
+article div.profile-side button {
+    margin: 0 auto;
+    padding: 8px;
+    width: 100%;
+    font-weight: 600;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+article div.profile-side button:hover {
+    color: white;
+    background-color: grey;
+}
+
+article div.angka1, article div.angka2, article div.batas {
+    display: inline;
+    float: left;
+    margin-top: -20px;
+}
+
+article div.angka1 {
+    margin-left: 60px;
+}
+
+article div.angka2 {
+    margin-left: 75px;
+}
+
+article div.batas {
+    border-right: 1px solid grey;
+    height: 30px;
+    position: relative;
+    left: 25px;
+    top: 24px;
+}
+
+article div.status-aside {
+    width: 63%;
+    background-color: white;
+    margin-left: 10px;
+    padding: 30px;
+    height: 380px;
+}
+
+article div.card {
+    float: left;
+    padding: 0 40px 20px;
+}
+
+article div.status-aside::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+article div.tombol-atas p{
+    padding: 5px 20px;
+    float: left;
+}
+
+article div.tombol-atas p.p1{
+    color: blue;
+}
+
+article div.tombol-atas p.p2{
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+article div.tombol-atas p.p2:hover{
+    background-color: #555;
+    color: #ddd;
+}
+
+article div.tombol-atas::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+div.konten {
+    background-color: #ddd;
+    padding: 4px 20px 20px;
+}
+
+div.konten-atas h3{
+    font-size: 16px;
+}
+
+div.konten-atas button{
+    position: relative;
+    bottom: 45px;
+    left: 775px;
+    background-color: white;
+    border: none;
+    padding: 10px;
+    font-size: 12px;
+}
+
+div.konten-atas button:hover{
+    background-color: grey;
+}
+
+div.konten-batas {
+    border-bottom: 1px solid #bbb;
+    position: relative;
+    width: 980px;
+    right: 20px;
+    bottom: 20px;
+}
+
+div.konten-bawah {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    padding-left: 30px;
+}
+
+div.konten-card {
+    padding-right: 100px;
+}

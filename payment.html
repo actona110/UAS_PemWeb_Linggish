@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/payment.css">
+    <title>Payment Page</title>
+</head>
+<body>
+<div class="container">
+    <form action="#">
+        <div class="left-column">
+            <h3 class="title1">Select your billing cycle</h3>
+            <div class="pricing-container">
+                <div class="billing">
+                    <input type="radio" name="pricing" id="billing1">
+                    <label for="billing1">
+                        <div class="text">
+                            <h5>Monthly</h5>
+                            <h5>$9.99/month</h5>
+                        </div>
+                    </label>
+                </div>
+                <div class="billing">
+                    <input type="radio" name="pricing" id="billing2">
+                    <label for="billing2">
+                        <div class="text">
+                            <h5>Annual</h5>
+                            <h5>$99/year</h5>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <h3 class="title">Payment Details</h3>
+            <div class="inputBox">
+                <span>Cards Accepted</span>
+                <img src="/Payment-Tool/card_img.png" alt="">
+            </div>
+            <div class="inputBox">
+                <span>Card Number</span>
+                <input type="text">
+            </div>
+            <div class="flex">
+                <div class="inputBox">
+                    <span>Expiration Date</span>
+                    <input type="text" placeholder="MM/YY">
+                </div>
+                <div class="inputBox">
+                    <span>CVV Code</span>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="flex">
+                <div class="inputBox">
+                    <span>Country</span>
+                    <input type="text" placeholder="Indonesia">
+                </div>
+                <div class="inputBox">
+                    <span>Postal Code</span>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <h3 class="title2">Order Summary</h3>
+            <div class="order-summary-top-box">
+                <div class="left-text">
+                    <div>Intermediate</div>
+                    <div>(monthly)</div>
+                </div>
+                <div class="right-text">
+                    $9.99/mo
+                </div>
+            </div>
+            <div class="order-summary-bottom-box">
+                <div class="codebox">
+                    <span class="promo-code-label">Promo Code</span>
+                    <input type="text">
+                    <button class="apply-btn">Apply</button>
+                </div>                  
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td class="description">Subtotal</td>
+                        <td class="amount">$9.99</td>
+                    </tr>
+                    <tr>
+                        <td class="description">Promo (if applicable)</td>
+                        <td class="amount">$0.00</td>
+                    </tr>
+                    <tr>
+                        <td class="description total">Total</td>
+                        <td class="amount total">$9.99</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+            <input type="checkbox" id="terms-checkbox">
+            <label for="terms-checkbox">I agree to the terms and conditions</label>
+            <input type="submit" value="Checkout" class="submit-btn">
+        </div>
+    </form>
+</div>       
+</body>
+</html>

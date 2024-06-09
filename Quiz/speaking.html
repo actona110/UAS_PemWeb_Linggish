@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Quiz</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="quiz-container" id="quiz">
+			<div class="quiz-header">
+				<div class="quiz-title">
+					<h3 class="text-left">QUIZ</h3>
+					<a href="/Quiz/finish.html" class="text-left next-button">FINISH ></a>
+				</div>
+				<div class="slide step_4"></div>
+				<h2 id="question" class="text-left">SPEAKING</h2>
+				<p class="question-text text-left">The location of the city of town</p>
+
+				<div id="gUMArea">
+					<button class="btn" id="gUMbtn">Record Voice</button>
+				</div>
+				<div id="btns">
+					<button class="btn" id="start">Start</button>
+					<button class="btn danger" id="stop" disabled>Stop</button>
+				</div>
+				<div>
+					<ul class="list-unstyled" id="ul"></ul>
+				</div>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+		<script src="/Quiz/script.js"></script>
+	</body>
+</html>

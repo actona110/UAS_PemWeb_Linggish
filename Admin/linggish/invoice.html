@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+	<link rel="stylesheet" href="css/invoice.css">
+	<title>Course</title>
+</head>
+<body>
+
+<header class="header">
+   
+		<section class="flex">
+	 
+		   <a href="materials.html" class="logo">Linggish</a>
+	 
+		   <div class="icons">
+			  <div id="menu-btn" class="fas fa-bars"></div>
+			  <div id="user-btn" class="fas fa-user"></div>
+			  <div id="toggle-btn" class="fas fa-sun"></div>
+              <div id="toggle-btn" class="fas fa-money-check-alt"></div>
+			  <a href="/userLogin.html">Log Out</a>
+		   </div>
+	 
+		   <div class="profile">
+			  <img src="images/pic-1.jpg" class="image" alt="">
+			  <h3 class="name">Bapak</h3>
+			  <p class="role">admin</p>
+			  <a href="profile.html" class="btn">view profile</a>
+			  <div class="flex-btn">
+				 <a href="login.html" class="option-btn">login</a>
+				 <a href="register.html" class="option-btn">register</a>
+			  </div>
+		   </div>
+		</section>
+</header>  
+
+<div class="container">
+		<div class="side-bar">
+			<div id="close-btn">
+				<i class="fas fa-times"></i>
+			</div>
+			<div class="profile">
+				<img src="images/pic-1.jpg" class="image" alt="">
+				<h3 class="name">Bapak</h3>
+				<p class="role">admin</p>
+				<a href="profile.html" class="btn">view profile</a>
+			</div>
+			<nav class="navbar">
+				<a href="materials.html"><i class="fas fa-chalkboard-user"></i><span>materials</span></a>
+				<a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
+				<a href="profile.html"><i class="fas fa-user"></i><span>profile</span></a>
+                <a href="invoice.html"><i class="fas fa-money-check-alt"></i><span>invoice</span></a>
+			</nav>
+		</div>
+</div>
+
+<section class="home-grid">
+	<div class="box-container">
+	   <div class="box">
+		  <h3>Add New Payment</h3>
+		  <form id="payment-form">
+			 <input type="text" id="user-id" placeholder="User ID" required>
+			 <input type="number" id="total" placeholder="Total Tagihan" required>
+			 <input type="date" id="payment-date" required>
+			 <select id="payment-method" required>
+				<option value="" disabled selected>Select Payment Method</option>
+				<option value="Credit Card">Credit Card</option>
+				<option value="Bank Transfer">Bank Transfer</option>
+				<option value="PayPal">PayPal</option>
+			 </select>
+			 <button type="submit">Add Payment</button>
+		  </form>
+	   </div>
+	</div>
+	<div class="results-container">
+	   <div class="results-box">
+		  <h3>Payment Results</h3>
+		  <table id="payment-results">
+			  <thead>
+				  <tr>
+					  <th>ID Tagihan</th>
+					  <th>User ID</th>
+					  <th>Total Tagihan</th>
+					  <th>Tanggal Pembayaran</th>
+					  <th>Metode Pembayaran</th>
+					  <th>Action</th>
+				  </tr>
+			  </thead>
+			  <tbody>
+				  <!-- Contoh baris hasil pembayaran -->
+				  <tr>
+					  <td>1</td>
+					  <td>user123</td>
+					  <td>500000</td>
+					  <td>2024-05-26</td>
+					  <td>Credit Card</td>
+					  <td><button class="edit-btn">Edit</button></td>
+				  </tr>
+				  <!-- Baris lainnya akan ditambahkan melalui JavaScript -->
+			  </tbody>
+		  </table>
+	  </div>
+ </section>
+ 
+ <footer class="footer">
+	&copy; copyright @ 2024 by <span>LINGGISH</span> | all rights reserved!
+ </footer>
+
+<script src="/js/invoice.js"></script>
+</body>
+</html>

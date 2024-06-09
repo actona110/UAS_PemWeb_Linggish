@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Quiz</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="quiz-container" id="quiz">
+			<div class="quiz-header">
+				<div class="quiz-title">
+					<h3 class="text-left">QUIZ</h3>
+					<a href="speaking.html" class="text-left next-button">NEXT ></a>
+				</div>
+				<div class="slide step_3"></div>
+				<h2 id="question" class="text-left">LISTENING</h2>
+				<audio controls class="audio-control">
+					<source src="1.-Part-A.mp3" type="audio/mpeg" />
+				</audio>
+				<p class="question-text text-left">What does Women mean?</p>
+				<ul>
+					<li>
+						<input type="radio" name="answer" id="a" class="answer" />
+						<label for="a" id="a_text">A. She does not like coffee. </label>
+					</li>
+
+					<li>
+						<input type="radio" name="answer" id="b" class="answer" />
+						<label for="b" id="b_text">B. There is no coffee available. </label>
+					</li>
+
+					<li>
+						<input type="radio" name="answer" id="c" class="answer" />
+						<label for="c" id="c_text">C. She wants to buy some tea. </label>
+					</li>
+
+					<li>
+						<input type="radio" name="answer" id="d" class="answer" />
+						<label for="d" id="d_text">D. She just had a cup of tea.</label>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

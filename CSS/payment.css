@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 25px;
+    min-height: 100vh;
+    background: #333;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.left-column, .right-column {
+    flex: 1;
+    padding: 50px; 
+    box-sizing: border-box;
+}
+
+.left-column {
+    background: #fff;
+}
+
+.right-column {
+    background: #f2f0f0; 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+.title1 {
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    align-self: center;
+}
+
+.title2 {
+  font-size: 20px;
+  color: #333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  align-self: center;
+  margin-top: 30px;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.pricing-container .billing {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    flex: 1; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.pricing-container .billing input[type="radio"] {
+    margin-right: 10px;
+}
+
+.pricing-container .billing .text h5 {
+    font-size: 17px;
+    color: #333;
+    font-weight: normal;
+}
+
+.inputBox {
+    margin: 15px 0;
+}
+
+.inputBox span {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.inputBox input {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;
+    border-radius: 5px;
+}
+
+.inputBox input:focus {
+    border: 1px solid #000;
+}
+
+.right-column {
+  background: #f2f0f0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+  padding: 20px; 
+}
+
+.order-summary-bottom {
+  display: flex;
+  gap: 20px;
+}
+
+.order-summary-top-box,
+.order-summary-bottom-box {
+  flex: 1;
+  margin-bottom: 30px; 
+}
+
+.order-summary-top-box {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.order-summary-bottom-box {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputBox .promo-code-input {
+  display: flex;
+  align-items: center;
+}
+
+.inputBox .promo-code-input input[type="text"] {
+  flex: 1;
+  border-radius: 5px 0 0 5px; 
+}
+
+.flex {
+  display: flex;
+  gap: 15px;
+}
+
+.codebox {
+  margin: 15px 0;
+}
+
+.codebox .promo-code-label {
+  margin-right: 10px; 
+}
+
+.codebox input[type="text"] {
+  width: calc(100% - 110px); 
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  font-size: 15px;
+  text-transform: none;
+  border-radius: 5px 0 0 5px; 
+}
+
+.codebox button.apply-btn {
+  padding: 10px 15px;
+  font-size: 15px;
+  background-color: #00bff0;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.codebox button.apply-btn:hover {
+  background-color: #00bff0;
+}
+
+.total-price table {
+  width: 100%;
+}
+
+.total-price td {
+  padding: 7px 0;
+}
+
+.total-price .description {
+  text-align: left;
+}
+
+.total-price .amount {
+  text-align: right;
+}
+
+.total-price .total {
+  font-size: 15px; 
+  font-weight: bold; 
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background: #00bff0;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background: #00bff0;
+}
